@@ -3,9 +3,9 @@ frontend:
   phases:
     preBuild:
       commands:
-        - nvm install 18.19.0
-        - nvm use 18.19.0
-        - corepack enable # ensures Yarn is enabled
+        - nvm install 20.11.1
+        - nvm use 20.11.1
+        - corepack enable
         - yarn install --frozen-lockfile
     build:
       commands:
