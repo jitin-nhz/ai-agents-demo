@@ -1,0 +1,19 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install 18.19.0
+        - nvm use 18.19.0
+        - corepack enable # ensures Yarn is enabled
+        - yarn install --frozen-lockfile
+    build:
+      commands:
+        - yarn build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
