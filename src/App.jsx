@@ -109,7 +109,7 @@ const assistantOptions = {
   },
   voice: {
     provider: "playht",
-    voiceId: "dMyQqiVXTU80dDl2eNK8",
+    voiceId: "jennifer",
   },
   model: {
     provider: "openai",
